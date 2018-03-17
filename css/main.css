@@ -524,6 +524,17 @@ header {
       color: #000;
       font-family: 'ProximaNova-Reg';
       position: relative; }
+    header > .container nav a:hover:after {
+      content: '';
+      display: inline-block;
+      opacity: 1;
+      width: 50%;
+      height: 5px;
+      background-color: #EE373E;
+      position: absolute;
+      left: calc(50% - (50% / 2));
+      bottom: -10px;
+      border-radius: 5px; }
     header > .container nav a:after {
       content: '';
       display: inline-block;
@@ -535,7 +546,6 @@ header {
       bottom: -10px;
       border-radius: 50%;
       transition: .5s;
-      transform: translateY(100%);
       opacity: 0; }
     header > .container nav a.active:after {
       content: '';
@@ -548,6 +558,18 @@ header {
       left: calc(50% - 2.5px);
       bottom: -10px;
       border-radius: 50%;
+      transform: translateX(0); }
+    header > .container nav a.active:hover:after {
+      content: '';
+      display: inline-block;
+      opacity: 1;
+      width: 50%;
+      height: 5px;
+      background-color: #EE373E;
+      position: absolute;
+      left: calc(50% - (50% / 2));
+      bottom: -10px;
+      border-radius: 5px;
       transform: translateX(0); }
     header > .container nav .social__media {
       display: inline-block;
