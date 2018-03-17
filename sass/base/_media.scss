@@ -1,0 +1,101 @@
+/**********************
+* MEDIA
+**********************/
+
+@media only screen and (min-width: 1700px) {
+    .road-map__h-line {
+        height: 2px;
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1100px) {
+    .features {
+        > .container {
+            max-width: 992px;
+        }
+        &__item {
+            min-width: 250px;
+            margin: 0 !important;
+            &__wrap {
+                margin-top: 40px;
+                justify-content: center;
+            }
+        }
+    }
+    .how-work__content__desc {
+        padding-right: 30px;
+    }
+    .economy__page__wrap {
+        .economy__page__content {
+            padding: 30px;
+        }
+    }
+    .distribution:after {
+        background-position: 0px 40px;
+    }
+    .team__item {
+        &:nth-child(4n) {
+            margin-right: 25px;
+        }
+        &:nth-child(5n) {
+            margin-left: 25px;
+        }
+        &:nth-child(1) {
+            margin-left: 25px;
+        }
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 992px) {
+    .about__wrap {
+        > .container {
+            > img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+    .how-work__video {
+        width: 400px;
+        height: 340px;
+    }
+    .economy__page__wrap {
+        flex-direction: column;
+    }
+    .economy__page__content,
+    .economy__page__2,
+    .economy__page__3,
+    .economy__page {
+        max-width: 100%;
+        width: 100%;
+    }
+    .economy__tab__wrap {
+        margin-bottom: 50px;
+    }
+    .economy__page__wrap .economy__page__content {
+        padding: 0;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .economy {
+        padding-bottom: 80px;
+    }
+    .distribution:after {
+        height: 90px;
+    }
+    .follow__item__wrap {
+        flex-wrap: wrap;
+    }
+    .follow__item {
+        margin: 15px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
