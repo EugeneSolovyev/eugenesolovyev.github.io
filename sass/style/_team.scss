@@ -22,6 +22,10 @@
         height: 27px;
         top: calc(100% - (27px / 2));
         left: 20px;
+        transition: box-shadow .3s ease-in-out;
+        &:hover {
+          box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3), 0 3px 14px rgba(0, 0, 0, 0.22);
+        }
       }
     }
   }
@@ -52,10 +56,10 @@
         margin-top: .8em;
       }
       &.btn-3d {
-        box-shadow: 0 4px .2px #075C9F;
-        transition: all .5s ease-in-out;
+        box-shadow: 0 3px .2px #075C9F;
+        transition: all 250ms;
         &:hover {
-          background-color: lighten(#0088D0, 15%);
+          background-color: lighten(#0088D0, 3%);
         }
         &:active {
           box-shadow: none;

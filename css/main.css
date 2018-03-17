@@ -1453,7 +1453,10 @@ header {
       width: 27px;
       height: 27px;
       top: calc(100% - (27px / 2));
-      left: 20px; }
+      left: 20px;
+      transition: box-shadow .3s ease-in-out; }
+      .team__photo__linkedin img:hover {
+        box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3), 0 3px 14px rgba(0, 0, 0, 0.22); }
   .team__content {
     width: 100%;
     height: calc(275px / 2.3);
@@ -1479,10 +1482,10 @@ header {
         font-weight: 800;
         margin-top: .8em; }
       .team__content .btn-custom.btn-3d {
-        box-shadow: 0 4px .2px #075C9F;
-        transition: all .5s ease-in-out; }
+        box-shadow: 0 3px .2px #075C9F;
+        transition: all 250ms; }
         .team__content .btn-custom.btn-3d:hover {
-          background-color: #1eb1ff; }
+          background-color: #0092df; }
         .team__content .btn-custom.btn-3d:active {
           box-shadow: none;
           transform: translateY(2px); }
