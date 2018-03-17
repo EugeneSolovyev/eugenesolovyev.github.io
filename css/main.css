@@ -1470,7 +1470,8 @@ header {
       border: none;
       padding: 6px 22px;
       border-radius: 3px;
-      cursor: pointer; }
+      cursor: pointer;
+      outline: none; }
       .team__content .btn-custom.btn-primary {
         background-color: #0088D0;
         color: #fff;
