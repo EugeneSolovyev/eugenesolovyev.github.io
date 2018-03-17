@@ -76,20 +76,29 @@
             position: absolute;
             left: 0;
             top: 0;
-            padding: 10px;
             height: 100%;
             width: 100%;
-            background-color: #202933;
-            color: #fff;
+            background-color: #fff;
             flex-direction: column;
             border-radius: 3px;
-            transform: translateX(100%);
+            transform: translateY(-100%);
             transition: .5s;
-                        display: flex;
+            display: flex;
+            .team-desc-header {
+                width: 100%;
+                padding: 10px;
+                background-color: #0088D0;
+                color: #fff;
+            }
+            .team-desc-body {
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 16px;
+                padding: 10px;
+            }
 
             &.active {
 
-            transform: translateX(0);
+                transform: translateY(0);
             }
             &__name {
                 font-size: 16px;

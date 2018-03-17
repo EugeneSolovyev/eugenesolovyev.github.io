@@ -1,7 +1,4 @@
 $(document).ready(function () {
-	
-	//date
-	
 	var deadline = 'April 1 2018 23:59:59';
 	
 	function getTimeRemaining(endtime) {
@@ -93,19 +90,14 @@ $(document).ready(function () {
 	
 	// var timer;
 	
-	$('.team__item__more--btn')
-		.on('click', function () {
-			var item = $(this).siblings('.team__item__desc');
-			item.addClass('active');
-		});
-	
-	$('.team__item__desc').blur(function (e) {
-		$(this).removeClass('active');
+	$('.btn-custom.btn-primary.btn-3d').on('click', function () {
+		var elem = $(this).parent().parent().siblings('.team__item__desc');
+		elem.addClass('active');
 	});
 	
-	// $('.team__item__desc').on('click', function () {
-	// 	$(this).removeClass('active');
-	// });
+	$('.team__item__desc').on('mouseleave', function (e) {
+		$(this).removeClass('active');
+	});
 	
 	$('.social__media__btn').on('click', function () {
 		$('.social__media').toggleClass('active');
@@ -169,29 +161,6 @@ $(document).ready(function () {
 	$('.popup__whitepaper__close').on('click', function () {
 		$('#popup__whitepaper').fadeOut(200);
 		$('main, footer').removeClass('blur');
-	})
-
-//    $('#road-map').bind('mousewheel', function(e) {
-//        e.preventDefault();
-//        var delta = e.originalEvent.deltaY;
-//
-//
-//        if(delta === -100) {
-//            this.scrollLeft -= 150;
-//        }
-//        else {
-//            this.scrollLeft += 150;
-//        }
-//    });
-
-//    $('#road-map').bind('scroll', function(e) {
-//
-//        console.log(e);
-//        console.log($('#road-map').scrollLeft());
-//
-//        if ($('#road-map').scrollLeft() == 0) {
-//            $(this).unbind('mousewheel');
-//        }
-//    });
+	});
 	jQuery('#road-map').scrollbar();
 });
