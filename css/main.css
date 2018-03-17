@@ -1478,10 +1478,13 @@ header {
         font-weight: 800;
         margin-top: .8em; }
       .team__content .btn-custom.btn-3d {
-        border-bottom: 2px solid #075C9F;
-        transition: border-bottom .5s ease-in-out; }
+        box-shadow: 0 4px .2px #075C9F;
+        transition: all .5s ease-in-out; }
         .team__content .btn-custom.btn-3d:hover {
-          border-bottom: none; }
+          background-color: #1eb1ff; }
+        .team__content .btn-custom.btn-3d:active {
+          box-shadow: none;
+          transform: translateY(2px); }
   .team__item {
     max-width: 195px;
     height: 275px;

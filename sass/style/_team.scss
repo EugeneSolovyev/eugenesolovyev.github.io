@@ -1,166 +1,170 @@
 .team {
-    padding-top: 67px;
-    padding-bottom: 120px;
-    &__title {
-        font-size: 40px;
-        font-weight: 900;
-        font-family: 'FuturaPTHeavy';
-        text-align: center;
-        margin-bottom: 40px;
+  padding-top: 67px;
+  padding-bottom: 120px;
+  &__title {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'FuturaPTHeavy';
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__photo {
+    width: 100%;
+    height: calc(275px / 1.7);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &__linkedin {
+      img {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        top: calc(100% - (27px / 2));
+        left: 20px;
+      }
     }
-    &__photo {
-        width: 100%;
-        height: calc(275px / 1.7);
-        background-position: 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        &__linkedin {
-            img {
-                position: absolute;
-                width: 27px;
-                height: 27px;
-                top: calc(100% - (27px / 2));
-                left: 20px;
-            }
-        }
+  }
+  &__content {
+    width: 100%;
+    height: calc(275px / 2.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .name {
+      text-transform: uppercase;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
     }
-    &__content {
-        width: 100%;
-        height: calc(275px / 2.3);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .name {
-            text-transform: uppercase;
-            font-family: 'Proxima Nova', sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-        }
-        .btn-custom {
-            border: none;
-            padding: 6px 22px;
-            border-radius: 3px;
-            cursor: pointer;
-            &.btn-primary {
-                background-color: #0088D0;
-                color: #fff;
-                font-size: 15px;
-                font-weight: 800;
-                margin-top: .8em;
-            }
-            &.btn-3d {
-                border-bottom: 2px solid #075C9F;
-                transition: border-bottom .5s ease-in-out;
-                &:hover {
-                    border-bottom: none;
-                }
-            }
-        }
-    }
-    &__item {
-        max-width: 195px;
-        height: 275px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ebebeb;
-        align-items: center;
-        margin: 30px 3%;
-        transition: box-shadow .2s cubic-bezier(.25,.75,.5,1.25);
-        position: relative;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0 19px 38px rgba(0,0,0,0.02), 0 5px 30px rgba(0,0,0,0.1);
-        &__desc {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #fff;
-            flex-direction: column;
-            border-radius: 3px;
-            transform: translateY(-100%);
-            transition: .5s;
-            display: flex;
-            .team-desc-header {
-                width: 100%;
-                padding: 10px;
-                background-color: #0088D0;
-                color: #fff;
-            }
-            .team-desc-body {
-                font-family: 'Proxima Nova', sans-serif;
-                font-size: 16px;
-                padding: 10px;
-            }
-
-            &.active {
-
-                transform: translateY(0);
-            }
-            &__name {
-                font-size: 16px;
-                font-weight: 700;
-                font-family: 'FuturaPTBold', sans-serif;
-                margin-bottom: 5px;
-            }
-            &__text {
-                font-size: 16px;
-            }
-        }
+    .btn-custom {
+      border: none;
+      padding: 6px 22px;
+      border-radius: 3px;
+      cursor: pointer;
+      &.btn-primary {
+        background-color: #0088D0;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 800;
+        margin-top: .8em;
+      }
+      &.btn-3d {
+        box-shadow: 0 4px .2px #075C9F;
+        transition: all .5s ease-in-out;
         &:hover {
-            box-shadow: 0 38px 75px rgba(0,0,0,0.04), 0 10px 60px rgba(0,0,0,0.15);
+          background-color: lighten(#0088D0, 15%);
         }
-        &__link {
-            img {
-                width: 20px;
-                position: absolute;
-                right: 1px;
-                top: 3px;
-                height: 20px;
-            }
+        &:active {
+          box-shadow: none;
+          transform: translateY(2px);
         }
-        &__img {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background-position: 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin-bottom: 8px;
-            position: relative;
-        }
-        &__name {
-            font-family: 'ProximaNova-Semibold';
-            font-size: 17px;
-        }
-        &__position {
-            font-size: 17px;
-            color: #808080;
-            text-transform: uppercase;
-            font-weight: 400;
-        }
-        &__more--btn {
-            font-size: 15px;
-            color: #0088D0;
-            cursor: pointer;
-        }
-        &__wrap {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
-        &:nth-child(5n) {
-            margin-left: 0;
-        }
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+      }
     }
+  }
+  &__item {
+    max-width: 195px;
+    height: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ebebeb;
+    align-items: center;
+    margin: 30px 3%;
+    transition: box-shadow .2s cubic-bezier(.25, .75, .5, 1.25);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.02), 0 5px 30px rgba(0, 0, 0, 0.1);
+    &__desc {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      flex-direction: column;
+      border-radius: 3px;
+      transform: translateY(-100%);
+      transition: .5s;
+      display: flex;
+      .team-desc-header {
+        width: 100%;
+        padding: 10px;
+        background-color: #0088D0;
+        color: #fff;
+      }
+      .team-desc-body {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      &.active {
+
+        transform: translateY(0);
+      }
+      &__name {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'FuturaPTBold', sans-serif;
+        margin-bottom: 5px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+    &:hover {
+      box-shadow: 0 38px 75px rgba(0, 0, 0, 0.04), 0 10px 60px rgba(0, 0, 0, 0.15);
+    }
+    &__link {
+      img {
+        width: 20px;
+        position: absolute;
+        right: 1px;
+        top: 3px;
+        height: 20px;
+      }
+    }
+    &__img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-position: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    &__name {
+      font-family: 'ProximaNova-Semibold';
+      font-size: 17px;
+    }
+    &__position {
+      font-size: 17px;
+      color: #808080;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    &__more--btn {
+      font-size: 15px;
+      color: #0088D0;
+      cursor: pointer;
+    }
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:nth-child(5n) {
+      margin-left: 0;
+    }
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
 }
