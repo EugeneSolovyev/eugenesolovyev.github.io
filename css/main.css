@@ -1477,7 +1477,7 @@ header {
         font-weight: 800;
         margin-top: .8em; }
       .team__content .btn-custom.btn-3d {
-        border-bottom: 10px solid #075C9F;
+        border-bottom: 2px solid #075C9F;
         transition: border-bottom .5s ease-in-out; }
         .team__content .btn-custom.btn-3d:hover {
           border-bottom: none; }
