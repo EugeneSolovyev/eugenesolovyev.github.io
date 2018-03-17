@@ -1469,7 +1469,8 @@ header {
     .team__content .btn-custom {
       border: none;
       padding: 6px 22px;
-      border-radius: 3px; }
+      border-radius: 3px;
+      cursor: pointer; }
       .team__content .btn-custom.btn-primary {
         background-color: #0088D0;
         color: #fff;
